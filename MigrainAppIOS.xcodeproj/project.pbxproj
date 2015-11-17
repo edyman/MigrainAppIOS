@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B76D21AF1BFBBEA80089D28A /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D21AB1BFBBEA80089D28A /* Event+CoreDataProperties.swift */; };
+		B76D21B01BFBBEA80089D28A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D21AC1BFBBEA80089D28A /* Event.swift */; };
+		B76D21B11BFBBEA80089D28A /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D21AD1BFBBEA80089D28A /* User+CoreDataProperties.swift */; };
+		B76D21B21BFBBEA80089D28A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D21AE1BFBBEA80089D28A /* User.swift */; };
 		B78CD1C51BFAD5AF0007384D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CD1C41BFAD5AF0007384D /* AppDelegate.swift */; };
 		B78CD1C71BFAD5AF0007384D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78CD1C61BFAD5AF0007384D /* ViewController.swift */; };
 		B78CD1CA1BFAD5AF0007384D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78CD1C81BFAD5AF0007384D /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B76D21AB1BFBBEA80089D28A /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B76D21AC1BFBBEA80089D28A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		B76D21AD1BFBBEA80089D28A /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B76D21AE1BFBBEA80089D28A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B78CD1C11BFAD5AF0007384D /* MigrainAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MigrainAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78CD1C41BFAD5AF0007384D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B78CD1C61BFAD5AF0007384D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,10 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B76D21B31BFBBED30089D28A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B76D21AB1BFBBEA80089D28A /* Event+CoreDataProperties.swift */,
+				B76D21AC1BFBBEA80089D28A /* Event.swift */,
+				B76D21AD1BFBBEA80089D28A /* User+CoreDataProperties.swift */,
+				B76D21AE1BFBBEA80089D28A /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		B78CD1B81BFAD5AF0007384D = {
 			isa = PBXGroup;
 			children = (
 				B78CD1C31BFAD5AF0007384D /* MigrainAppIOS */,
+				B76D21B31BFBBED30089D28A /* Model */,
 				B78CD1C21BFAD5AF0007384D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,7 +161,11 @@
 			files = (
 				B78CD1C71BFAD5AF0007384D /* ViewController.swift in Sources */,
 				B78CD1CD1BFAD5AF0007384D /* MigrainAppIOS.xcdatamodeld in Sources */,
+				B76D21B11BFBBEA80089D28A /* User+CoreDataProperties.swift in Sources */,
+				B76D21AF1BFBBEA80089D28A /* Event+CoreDataProperties.swift in Sources */,
 				B78CD1C51BFAD5AF0007384D /* AppDelegate.swift in Sources */,
+				B76D21B01BFBBEA80089D28A /* Event.swift in Sources */,
+				B76D21B21BFBBEA80089D28A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +315,7 @@
 				B78CD1D81BFAD5AF0007384D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
-    <entity name="Event" syncable="YES">
+    <entity name="Event" representedClassName=".Event" syncable="YES">
         <attribute name="aCrisis" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="aDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="aDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -24,7 +24,7 @@
         <attribute name="eAura" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="zCreatedAt" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
-    <entity name="User" syncable="YES">
+    <entity name="User" representedClassName=".User" syncable="YES">
         <attribute name="bloodType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dob" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="doctorMail" optional="YES" attributeType="String" syncable="YES"/>
