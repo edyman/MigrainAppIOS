@@ -3,16 +3,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="MigrainAppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="QeL-mD-m5Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="b1t-an-MfB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -21,7 +22,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_home2" translatesAutoresizingMaskIntoConstraints="NO" id="QRE-ZA-v81">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.066666666666666666" green="0.12156862745098039" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.11764705882352941" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IpK-fW-Jdu">
                                 <rect key="frame" x="137" y="37" width="46" height="21"/>
@@ -47,6 +48,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-744" y="417"/>
         </scene>
@@ -55,97 +57,126 @@
             <objects>
                 <viewController title="Menu" id="8sQ-qu-2cj" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tRd-zz-X5f"/>
-                        <viewControllerLayoutGuide type="bottom" id="xXj-Yz-gCP"/>
+                        <viewControllerLayoutGuide type="top" id="CHp-wN-Ttq"/>
+                        <viewControllerLayoutGuide type="bottom" id="a0T-GU-yYU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="znP-WI-w0J">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwR-0t-N5U">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwR-0t-N5U">
                                 <rect key="frame" x="32" y="445" width="257" height="57"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="f0U-gM-UIg"/>
+                                    <constraint firstAttribute="height" constant="57" id="tZ0-zF-Zh0"/>
+                                </constraints>
                                 <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Actualizar usuario">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="q9a-Fu-4KE" kind="modal" id="9Iz-vW-tDn"/>
+                                    <segue destination="q9a-Fu-4KE" kind="push" id="dIh-HL-g9b"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvK-GU-dGo">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvK-GU-dGo">
                                 <rect key="frame" x="32" y="315" width="257" height="57"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.28235294117647058" green="0.23529411764705882" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="BJP-6P-87H"/>
+                                    <constraint firstAttribute="height" constant="57" id="YdM-c2-TBj"/>
+                                </constraints>
                                 <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Enviar informe">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="K7B-9N-rqS" kind="push" id="oqA-4X-baM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5i-qW-rte">
-                                <rect key="frame" x="32" y="186" width="257" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5i-qW-rte">
+                                <rect key="frame" x="32" y="198" width="227" height="32"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.83137254900000002" green="0.34901960780000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Amg-kh-bpj"/>
+                                    <constraint firstAttribute="width" constant="257" id="IuM-4P-hYg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Crear nuevo reporte">
+                                <state key="normal" title="Crear nuevo reporte" image="icon_new_user">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="jXz-K7-l5B" kind="push" id="Vh2-4H-q2u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eH-Ia-Awr">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eH-Ia-Awr">
                                 <rect key="frame" x="32" y="380" width="257" height="57"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.35686274509803922" green="0.73333333333333328" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="dNa-z0-x3z"/>
+                                    <constraint firstAttribute="width" constant="257" id="fi4-Ux-rnK"/>
+                                </constraints>
                                 <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Glosario de términos">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FCi-cW-LPB" kind="push" id="9bK-rP-0Gv"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57C-Gl-C1P">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57C-Gl-C1P">
                                 <rect key="frame" x="32" y="251" width="257" height="56"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.58431372549019611" green="0.21176470588235294" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="bDn-3g-a8j"/>
+                                    <constraint firstAttribute="height" constant="56" id="x9w-Mh-yCr"/>
+                                </constraints>
                                 <inset key="contentEdgeInsets" minX="18" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Historial de Episodios">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_history" translatesAutoresizingMaskIntoConstraints="NO" id="Lns-I2-64E">
-                                <rect key="frame" x="223" y="250" width="67" height="56"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_new_report" translatesAutoresizingMaskIntoConstraints="NO" id="slm-RT-DxG">
-                                <rect key="frame" x="223" y="186" width="67" height="56"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_send_mail" translatesAutoresizingMaskIntoConstraints="NO" id="iUs-z2-UKc">
-                                <rect key="frame" x="223" y="316" width="67" height="56"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_glosario_terminos" translatesAutoresizingMaskIntoConstraints="NO" id="t2m-W7-0df">
-                                <rect key="frame" x="223" y="380" width="67" height="56"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_new_user" translatesAutoresizingMaskIntoConstraints="NO" id="V1u-ve-xKw">
-                                <rect key="frame" x="223" y="445" width="67" height="56"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abbott_footer" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-FX-O3Z">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="abbott_footer" translatesAutoresizingMaskIntoConstraints="NO" id="l9l-FX-O3Z">
                                 <rect key="frame" x="67" y="510" width="187" height="38"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Da7-PU-FKZ"/>
+                                    <constraint firstAttribute="width" constant="187" id="Py0-RJ-46E"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_user" translatesAutoresizingMaskIntoConstraints="NO" id="eHw-vz-Hxe">
-                                <rect key="frame" x="40" y="64" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo_user" translatesAutoresizingMaskIntoConstraints="NO" id="eHw-vz-Hxe">
+                                <rect key="frame" x="40" y="33" width="240" height="128"/>
                                 <animations/>
+                                <rect key="contentStretch" x="1" y="0.65000000000000002" width="1" height="1"/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eHw-vz-Hxe" firstAttribute="centerX" secondItem="57C-Gl-C1P" secondAttribute="centerX" id="27V-U6-6Js"/>
+                            <constraint firstItem="eHw-vz-Hxe" firstAttribute="centerX" secondItem="l9l-FX-O3Z" secondAttribute="centerX" id="EUI-ZK-6dQ"/>
+                            <constraint firstItem="yvK-GU-dGo" firstAttribute="top" secondItem="eHw-vz-Hxe" secondAttribute="bottom" constant="154" id="Gep-2y-5Vn"/>
+                            <constraint firstItem="4eH-Ia-Awr" firstAttribute="top" secondItem="eHw-vz-Hxe" secondAttribute="bottom" constant="219" id="RsI-gb-Cqa"/>
+                            <constraint firstItem="eHw-vz-Hxe" firstAttribute="centerX" secondItem="4eH-Ia-Awr" secondAttribute="centerX" id="UYd-Mr-UXU"/>
+                            <constraint firstItem="57C-Gl-C1P" firstAttribute="top" secondItem="eHw-vz-Hxe" secondAttribute="bottom" constant="90" id="Vy1-DM-n7E"/>
+                            <constraint firstItem="eHw-vz-Hxe" firstAttribute="centerX" secondItem="I5i-qW-rte" secondAttribute="centerX" id="dme-dm-JYV"/>
+                            <constraint firstItem="YwR-0t-N5U" firstAttribute="top" secondItem="eHw-vz-Hxe" secondAttribute="bottom" constant="284" id="fpf-RE-exX"/>
+                            <constraint firstItem="eHw-vz-Hxe" firstAttribute="centerXWithinMargins" secondItem="znP-WI-w0J" secondAttribute="centerX" id="pFE-Ti-b56"/>
+                            <constraint firstItem="I5i-qW-rte" firstAttribute="top" secondItem="eHw-vz-Hxe" secondAttribute="bottom" constant="25" id="qnT-XG-EXg"/>
+                            <constraint firstItem="eHw-vz-Hxe" firstAttribute="centerX" secondItem="YwR-0t-N5U" secondAttribute="centerX" id="s37-Q6-uwa"/>
+                            <constraint firstItem="eHw-vz-Hxe" firstAttribute="centerX" secondItem="yvK-GU-dGo" secondAttribute="centerX" id="w00-PQ-SoN"/>
+                            <constraint firstItem="eHw-vz-Hxe" firstAttribute="top" secondItem="CHp-wN-Ttq" secondAttribute="bottom" constant="13" id="xHO-FE-Mks"/>
+                            <constraint firstItem="l9l-FX-O3Z" firstAttribute="top" secondItem="eHw-vz-Hxe" secondAttribute="bottom" constant="349" id="z85-2n-gta"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="obA-9N-naA"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -158,8 +189,8 @@
             <objects>
                 <viewController title="intensidad" id="o24-mk-Xc3" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kxr-dl-Oob"/>
-                        <viewControllerLayoutGuide type="bottom" id="Nho-bi-2Ou"/>
+                        <viewControllerLayoutGuide type="top" id="70M-fE-Acf"/>
+                        <viewControllerLayoutGuide type="bottom" id="8P2-81-pPd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="igY-Ws-kt1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -184,8 +215,8 @@
             <objects>
                 <viewController title="Informe" id="QkW-xQ-HyT" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jxi-Gx-hQK"/>
-                        <viewControllerLayoutGuide type="bottom" id="Kcy-1Z-nK6"/>
+                        <viewControllerLayoutGuide type="top" id="N61-JF-6BN"/>
+                        <viewControllerLayoutGuide type="bottom" id="4mb-ub-Fsq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OwP-j9-uxc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -204,8 +235,8 @@
             <objects>
                 <viewController title="event" id="jXz-K7-l5B" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fcv-GI-zv4"/>
-                        <viewControllerLayoutGuide type="bottom" id="kk1-GZ-E1G"/>
+                        <viewControllerLayoutGuide type="top" id="yGt-5r-5vY"/>
+                        <viewControllerLayoutGuide type="bottom" id="0cI-wD-l0B"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xfk-B7-ku6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -220,6 +251,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -232,26 +264,38 @@
             <objects>
                 <viewController title="User" id="q9a-Fu-4KE" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kOs-vW-Rgk"/>
-                        <viewControllerLayoutGuide type="bottom" id="G92-a2-5kv"/>
+                        <viewControllerLayoutGuide type="top" id="GIc-2G-u5y"/>
+                        <viewControllerLayoutGuide type="bottom" id="kMo-d8-2P7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uw0-gH-PQQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_user" translatesAutoresizingMaskIntoConstraints="NO" id="08X-J7-8DX">
-                                <rect key="frame" x="40" y="20" width="240" height="128"/>
-                                <animations/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Género:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ubM-tK-Zeo">
-                                <rect key="frame" x="40" y="410" width="63" height="33"/>
+                                <rect key="frame" x="34" y="414" width="63" height="33"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <datePicker contentMode="scaleAspectFit" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="DVd-Yh-k7k">
-                                <rect key="frame" x="40" y="318" width="240" height="84"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abbott_footer" translatesAutoresizingMaskIntoConstraints="NO" id="3tw-tv-9kI">
+                                <rect key="frame" x="67" y="481" width="187" height="38"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-18-HDy">
+                                <rect key="frame" x="0.0" y="527" width="320" height="41"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="GUARDAR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_user" translatesAutoresizingMaskIntoConstraints="NO" id="08X-J7-8DX">
+                                <rect key="frame" x="40" y="60" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <datePicker multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" enabled="NO" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVd-Yh-k7k">
+                                <rect key="frame" x="0.0" y="358" width="320" height="48"/>
                                 <animations/>
                                 <date key="date" timeIntervalSinceReferenceDate="469555692.90367299">
                                     <!--2015-11-18 16:08:12 +0000-->
@@ -264,30 +308,26 @@
                                 </date>
                                 <locale key="locale" localeIdentifier="es_EC"/>
                             </datePicker>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abbott_footer" translatesAutoresizingMaskIntoConstraints="NO" id="3tw-tv-9kI">
-                                <rect key="frame" x="67" y="475" width="187" height="38"/>
-                                <animations/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Nombre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ger-31-JJy">
-                                <rect key="frame" x="40" y="166" width="240" height="30"/>
+                                <rect key="frame" x="40" y="206" width="240" height="30"/>
                                 <animations/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Apellidos" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7I-Tl-dfK">
-                                <rect key="frame" x="40" y="204" width="240" height="30"/>
+                                <rect key="frame" x="40" y="244" width="240" height="30"/>
                                 <animations/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3d-aV-sNa">
-                                <rect key="frame" x="40" y="242" width="240" height="30"/>
+                                <rect key="frame" x="40" y="282" width="240" height="30"/>
                                 <animations/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Tipo de Sangre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9t-Fu-NHm">
-                                <rect key="frame" x="40" y="280" width="240" height="30"/>
+                                <rect key="frame" x="40" y="320" width="240" height="30"/>
                                 <animations/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -296,25 +336,35 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hek-ne-tcG"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e00-Ry-kkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-734" y="1169"/>
         </scene>
-        <!--View Controller-->
+        <!--glossary-->
         <scene sceneID="0Wc-Fa-KXJ">
             <objects>
-                <viewController id="FCi-cW-LPB" sceneMemberID="viewController">
+                <viewController title="glossary" id="FCi-cW-LPB" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mz0-V1-tpY"/>
-                        <viewControllerLayoutGuide type="bottom" id="PZr-OM-VI6"/>
+                        <viewControllerLayoutGuide type="top" id="7C4-wH-LEb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tkf-Mg-bAM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="c1S-eR-j4n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glosario_terminos" translatesAutoresizingMaskIntoConstraints="NO" id="Sfv-tV-vPh">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="FkU-LL-wTB"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bT-7e-YnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -325,15 +375,44 @@
             <objects>
                 <viewController id="K7B-9N-rqS" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WBP-vp-y2v"/>
-                        <viewControllerLayoutGuide type="bottom" id="X3r-Hc-gpf"/>
+                        <viewControllerLayoutGuide type="top" id="jnL-uu-Zlu"/>
+                        <viewControllerLayoutGuide type="bottom" id="vG9-JJ-nyp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RAR-jZ-8df">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Ingrese el correo electrónico" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FVj-fA-9O2">
+                                <rect key="frame" x="14" y="197" width="299" height="30"/>
+                                <animations/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBP-gU-wx5">
+                                <rect key="frame" x="0.0" y="282" width="320" height="49"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.062745098039215685" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ENVIAR REPORTE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abbott_footer" translatesAutoresizingMaskIntoConstraints="NO" id="yoT-dM-DGx">
+                                <rect key="frame" x="67" y="366" width="187" height="38"/>
+                                <animations/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Envié a su médico tratante vía correo electrónico, un reporte general de los eventos de migraña recolpilados por la aplicación." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="TFa-Dm-qxm">
+                                <rect key="frame" x="0.0" y="59" width="320" height="84"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="j7c-CW-tl2"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHP-iL-gZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,11 +441,8 @@
     </scenes>
     <resources>
         <image name="abbott_footer" width="102" height="21"/>
-        <image name="icon_glosario_terminos" width="46" height="32"/>
-        <image name="icon_history" width="46" height="32"/>
-        <image name="icon_new_report" width="46" height="32"/>
+        <image name="glosario_terminos" width="300" height="456"/>
         <image name="icon_new_user" width="46" height="32"/>
-        <image name="icon_send_mail" width="46" height="32"/>
         <image name="logo_home2" width="195" height="276"/>
         <image name="logo_user" width="112" height="108"/>
     </resources>
