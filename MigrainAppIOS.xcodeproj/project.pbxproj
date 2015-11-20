@@ -18,6 +18,7 @@
 		B78CD1CD1BFAD5AF0007384D /* MigrainAppIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B78CD1CB1BFAD5AF0007384D /* MigrainAppIOS.xcdatamodeld */; };
 		B78CD1CF1BFAD5AF0007384D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78CD1CE1BFAD5AF0007384D /* Assets.xcassets */; };
 		B78CD1D21BFAD5AF0007384D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78CD1D01BFAD5AF0007384D /* LaunchScreen.storyboard */; };
+		B7A3896E1BFFD62B00AB176D /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3896D1BFFD62B00AB176D /* EventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B78CD1CE1BFAD5AF0007384D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B78CD1D11BFAD5AF0007384D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B78CD1D31BFAD5AF0007384D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A3896D1BFFD62B00AB176D /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B78CD1D31BFAD5AF0007384D /* Info.plist */,
 				B78CD1CB1BFAD5AF0007384D /* MigrainAppIOS.xcdatamodeld */,
 				22B9EA311BFFC81F0068B308 /* SlideController.swift */,
+				B7A3896D1BFFD62B00AB176D /* EventViewController.swift */,
 			);
 			path = MigrainAppIOS;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				B76D21B11BFBBEA80089D28A /* User+CoreDataProperties.swift in Sources */,
 				B76D21AF1BFBBEA80089D28A /* Event+CoreDataProperties.swift in Sources */,
 				B78CD1C51BFAD5AF0007384D /* AppDelegate.swift in Sources */,
+				B7A3896E1BFFD62B00AB176D /* EventViewController.swift in Sources */,
 				22B9EA321BFFC81F0068B308 /* SlideController.swift in Sources */,
 				B76D21B01BFBBEA80089D28A /* Event.swift in Sources */,
 				B76D21B21BFBBEA80089D28A /* User.swift in Sources */,
