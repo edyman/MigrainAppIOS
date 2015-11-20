@@ -1,10 +1,6 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
       "resizing" : {
         "mode" : "9-part",
         "center" : {
@@ -13,14 +9,18 @@
           "height" : 1
         },
         "cap-insets" : {
-          "bottom" : 108,
-          "top" : 108,
-          "right" : 112,
-          "left" : 112
+          "bottom" : 11,
+          "top" : 51,
+          "right" : 59,
+          "left" : 208
         }
       },
       "idiom" : "universal",
-      "filename" : "logo_user.png",
+      "filename" : "xcode4.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
       "scale" : "2x"
     },
     {
