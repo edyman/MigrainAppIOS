@@ -5,6 +5,20 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 32,
+          "top" : 32,
+          "right" : 46,
+          "left" : 45
+        }
+      },
       "idiom" : "universal",
       "filename" : "icon_send_mail.png",
       "scale" : "2x"

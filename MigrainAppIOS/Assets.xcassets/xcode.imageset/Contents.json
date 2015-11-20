@@ -1,26 +1,26 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
       "resizing" : {
         "mode" : "9-part",
         "center" : {
           "mode" : "tile",
-          "width" : 1,
-          "height" : 1
+          "width" : 190,
+          "height" : 52
         },
         "cap-insets" : {
-          "bottom" : 108,
-          "top" : 108,
-          "right" : 112,
-          "left" : 112
+          "bottom" : 5,
+          "top" : 7,
+          "right" : 0,
+          "left" : 8
         }
       },
       "idiom" : "universal",
-      "filename" : "logo_user.png",
+      "filename" : "xcode.jpg",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
       "scale" : "2x"
     },
     {
