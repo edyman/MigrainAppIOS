@@ -459,7 +459,6 @@
         <!--Navigation Controller-->
         <scene sceneID="V2K-AA-ucb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sB4-UP-gXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GAg-Br-OpZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -473,6 +472,7 @@
                         <segue destination="8sQ-qu-2cj" kind="relationship" relationship="rootViewController" id="Hjf-qc-CVb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sB4-UP-gXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-124" y="417"/>
         </scene>
