@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22B9EA321BFFC81F0068B308 /* SlideController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EA311BFFC81F0068B308 /* SlideController.swift */; };
+		22CF8C051C03774300FF8AAB /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF8C041C03774300FF8AAB /* SlideViewController.swift */; };
 		B76D21AF1BFBBEA80089D28A /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D21AB1BFBBEA80089D28A /* Event+CoreDataProperties.swift */; };
 		B76D21B01BFBBEA80089D28A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D21AC1BFBBEA80089D28A /* Event.swift */; };
 		B76D21B11BFBBEA80089D28A /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D21AD1BFBBEA80089D28A /* User+CoreDataProperties.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22B9EA311BFFC81F0068B308 /* SlideController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideController.swift; sourceTree = "<group>"; };
+		22CF8C041C03774300FF8AAB /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 		B76D21AB1BFBBEA80089D28A /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B76D21AC1BFBBEA80089D28A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B76D21AD1BFBBEA80089D28A /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -80,12 +80,12 @@
 			children = (
 				B78CD1C41BFAD5AF0007384D /* AppDelegate.swift */,
 				B78CD1C61BFAD5AF0007384D /* ViewController.swift */,
+				22CF8C041C03774300FF8AAB /* SlideViewController.swift */,
 				B78CD1C81BFAD5AF0007384D /* Main.storyboard */,
 				B78CD1CE1BFAD5AF0007384D /* Assets.xcassets */,
 				B78CD1D01BFAD5AF0007384D /* LaunchScreen.storyboard */,
 				B78CD1D31BFAD5AF0007384D /* Info.plist */,
 				B78CD1CB1BFAD5AF0007384D /* MigrainAppIOS.xcdatamodeld */,
-				22B9EA311BFFC81F0068B308 /* SlideController.swift */,
 			);
 			path = MigrainAppIOS;
 			sourceTree = "<group>";
@@ -166,8 +166,8 @@
 				B78CD1CD1BFAD5AF0007384D /* MigrainAppIOS.xcdatamodeld in Sources */,
 				B76D21B11BFBBEA80089D28A /* User+CoreDataProperties.swift in Sources */,
 				B76D21AF1BFBBEA80089D28A /* Event+CoreDataProperties.swift in Sources */,
+				22CF8C051C03774300FF8AAB /* SlideViewController.swift in Sources */,
 				B78CD1C51BFAD5AF0007384D /* AppDelegate.swift in Sources */,
-				22B9EA321BFFC81F0068B308 /* SlideController.swift in Sources */,
 				B76D21B01BFBBEA80089D28A /* Event.swift in Sources */,
 				B76D21B21BFBBEA80089D28A /* User.swift in Sources */,
 			);
