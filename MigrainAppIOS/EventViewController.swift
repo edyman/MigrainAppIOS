@@ -7,20 +7,37 @@
 //
 
 import UIKit
+import CoreData
 
 class EventViewController: UITableViewController {
+	
+	/*// 1EP: Create Context
 
+	let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext;
+	
+	// 2EP: Agregar variable para control de nuevo evento
+	var nItem : Event?	=	nil;
+	
+	@IBOutlet weak var date: UITextField!
+	@IBOutlet weak var hour: UITextField!
+	
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+	// 3EP: Veriifcar la carga de datos si viende desde un ARRAY
+		
+		if nItem != nil {
+			date.text = nItem?.aDate
+			hour.text = nItem?.aHour
+			
+		}
+		
+		
     }
+*/
 
-    override func didReceiveMemoryWarning() {
+/*    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -35,8 +52,23 @@ class EventViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
+    }*/
+	/*
 
+	@IBAction func cancelTapped(sender: AnyObject) {
+		dismissViewController();
+	}
+
+	@IBAction func saveTapped(sender: AnyObject) {
+		dismissViewController();
+	}
+	
+	func dismissViewController(){
+		navigationController?.popViewControllerAnimated(true)
+	}
+*/
+	
+	
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)

@@ -474,18 +474,33 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Q6d-l0-eKt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Mli-Go-Bbc" detailTextLabel="b5I-dS-riJ" style="IBUITableViewCellStyleSubtitle" id="Q6d-l0-eKt">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q6d-l0-eKt" id="2qi-7E-Jfi">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mli-Go-Bbc">
+                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b5I-dS-riJ">
+                                            <rect key="frame" x="15" y="25" width="31" height="14"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
-                                <connections>
-                                    <segue destination="vSw-xx-0kU" kind="custom" id="Vkm-Rl-Ah3"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -497,7 +512,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="09F-aM-oVy"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="b1g-1O-adI">
                             <connections>
-                                <segue destination="vSw-xx-0kU" kind="push" identifier="add" id="qQ7-W0-AHq"/>
+                                <segue destination="vSw-xx-0kU" kind="modal" id="qrh-NC-l8J"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -509,26 +524,53 @@
         <!--Event-->
         <scene sceneID="5bR-i5-GOQ">
             <objects>
-                <viewController id="vSw-xx-0kU" sceneMemberID="viewController">
+                <viewController id="vSw-xx-0kU" customClass="EventViewController" customModule="MigrainAppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yiy-4B-oIH"/>
                         <viewControllerLayoutGuide type="bottom" id="sP1-zN-jdz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ehj-B5-XrO">
+                    <view key="view" contentMode="scaleToFill" id="ehj-B5-XrO" customClass="Even">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDt-ag-gOC">
+                                <rect key="frame" x="27" y="82" width="266" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hora" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxY-xJ-vLu">
+                                <rect key="frame" x="27" y="125" width="266" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Event" id="GS9-dQ-pWf">
                         <barButtonItem key="backBarButtonItem" title="Back" id="eha-ae-zVo"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XHN-2R-WpA"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="Xoj-R9-Lx6"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="XHN-2R-WpA">
+                            <connections>
+                                <action selector="cancelTapped:" destination="vSw-xx-0kU" id="BzH-dQ-kha"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="save" id="Xoj-R9-Lx6">
+                            <connections>
+                                <action selector="saveTapped:" destination="vSw-xx-0kU" id="xKE-AR-ZDT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="date" destination="PDt-ag-gOC" id="GFJ-NU-xzi"/>
+                        <outlet property="hour" destination="qxY-xJ-vLu" id="vMQ-Ol-MVT"/>
+                        <outlet property="saveTapped" destination="Xoj-R9-Lx6" id="il4-Ow-bfw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcP-im-78e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="-539"/>
+            <point key="canvasLocation" x="1016" y="-537"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="V2K-AA-ucb">
@@ -576,7 +618,4 @@
         <image name="logo_home2" width="195" height="276"/>
         <image name="logo_user" width="112" height="108"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="qQ7-W0-AHq"/>
-    </inferredMetricsTieBreakers>
 </document>
