@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Store" representedClassName=".CodeDataExampleV,Store" syncable="YES">
+        <attribute name="sDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="sLat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sLng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Store" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
+</model>
